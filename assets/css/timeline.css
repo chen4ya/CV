@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.timeline {
+  list-style: none;
+}
+.timeline > li {
+  margin-bottom: 60px;
+}
+
+/* for Desktop */
+@media ( min-width : 880px ){
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+  .timeline-date {
+    width: 170px;
+    float: left;
+    margin-top: 15px;
+	
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    border-left: 3px #e5e5d1 solid;
+    padding-left: 30px;
+  }
+  .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #73B39B;
+    position: absolute;
+    left: 173px;
+    top: 24px;
+    border-radius: 100%;
+  }
+}
